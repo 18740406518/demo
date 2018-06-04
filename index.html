@@ -1,126 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script type="text/javascript">
-		
-		function Class(){
-			object = this;
-			object.add = function(arg){
-				return arg;
-			};
-		};
-		var object = new Class();
-		function clickEvent(){
-			document.getElementById("a").href = "#a1"; 
-			document.getElementById("a").click();
-			
-			alert(object.add(3));
-		}
-		
-
-	</script>
+  <title>Bootstrap ÊµÀý</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
 </head>
 <body>
-	<button onclick="clickEvent()" style="cursor: s-resize;">btn</button>
 
-
-	<div style="cursor: e-resize;border: 1px solid red;">bbb</div>
-	<div contenteditable="true">
-		<table>
-			<tr>
-				<td>aaaa</td>
-				<td>bbbb</td>
-			</tr>
-			<tr>
-				<td>cccc</td>
-				<td>dddd</td>
-			</tr>
-
-		</table>
-	</div>
-	<details>
-		aaaa
-		<summary>bbbb</summary>
-
-	</details>
-
-	<a href="#">aaaaa</a><br/>
-	<input type="color" name="aa"><br/>
-	<div id="a1">a1</div>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<div id="a2">a2</div>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<a id='a' style="visibility: hidden;" href="#a2">aaaaaaaaaaaaaadasdasd</a>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
-		<input type="color" name="aa"><br/>
-	<input type="date" name="aa2"><br/>
-	<input type="url" name="aa3"><br/>
-	<input type="search" name="aa"><br/>
+<div id="demo" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Ö¸Ê¾·û -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+ 
+  <!-- ÂÖ²¥Í¼Æ¬ -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+    </div>
+  </div>
+ 
+  <!-- ×óÓÒÇÐ»»°´Å¥ -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
 
 </body>
 </html>
